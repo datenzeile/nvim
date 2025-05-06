@@ -25,7 +25,7 @@ return {
         end,
       },
       { 'nvim-telescope/telescope-ui-select.nvim' },
-
+      { 'nvim-telescope/telescope-file-browser.nvim' },
       -- Useful for getting pretty icons, but requires a Nerd Font.
       { 'nvim-tree/nvim-web-devicons', enabled = vim.g.have_nerd_font },
     },
@@ -65,12 +65,29 @@ return {
           ['ui-select'] = {
             require('telescope.themes').get_dropdown(),
           },
+          mappings = {
+            ['i'] = {
+              -- Use the correct action for creating new files
+              ['<C-n>'] = function(prompt_bufnr)
+                local actions = require 'telescope._extensions.file_browser.actions'
+                actions.create_from_prompt(prompt_bufnr)
+              end,
+            },
+            ['n'] = {
+              -- Normal mode mapping for creating files
+              ['n'] = function(prompt_bufnr)
+                local actions = require 'telescope._extensions.file_browser.actions'
+                actions.create_from_prompt(prompt_bufnr)
+              end,
+            },
+          },
         },
       }
 
       -- Enable Telescope extensions if they are installed
       pcall(require('telescope').load_extension, 'fzf')
       pcall(require('telescope').load_extension, 'ui-select')
+      pcall(require('telescope').load_extension, 'file_browser')
 
       -- See `:help telescope.builtin`
       local builtin = require 'telescope.builtin'
@@ -107,6 +124,25 @@ return {
       vim.keymap.set('n', '<leader>sn', function()
         builtin.find_files { cwd = vim.fn.stdpath 'config' }
       end, { desc = '[S]earch [N]eovim files' })
+
+      -- keybinding for file browser
+      vim.keymap.set('n', '<leader>bb', function()
+        require('telescope').extensions.file_browser.file_browser()
+      end, { desc = '[F]ile [B]rowser' })
+
+      -- Add a keybinding for creating a new file
+      vim.keymap.set('n', '<leader>bn', function()
+        local filename = vim.fn.input('New file: ', '', 'file')
+        if filename ~= '' then
+          -- Create the file
+          local file = io.open(filename, 'w')
+          if file then
+            file:close()
+            -- Open the newly created file
+            vim.cmd('edit ' .. filename)
+          end
+        end
+      end, { desc = '[F]ile [N]ew' })
     end,
   },
 }
