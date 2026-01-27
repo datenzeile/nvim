@@ -42,12 +42,19 @@ require('lazy').setup({
   require 'kickstart/plugins/mini',
 
   require 'kickstart/plugins/treesitter',
+
   -- LLM Autocompletion
   require 'custom/plugins/supermaven',
+  -- Minuet AI
+  -- require 'custom/plugins/minuet-ai',
   -- Zen Mode
   require 'custom/plugins/zen-mode',
   -- NVIM-Tree
   require 'custom/plugins/nvim-tree',
+  -- snacks
+  require 'custom/plugins/snacks',
+  -- Code Claude
+  require 'custom/plugins/claudecode',
 
   -- The following comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and

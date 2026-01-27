@@ -67,3 +67,16 @@ vim.opt.scrolloff = 10
 vim.opt.confirm = true
 
 -- vim: ts=2 sts=2 sw=2 et
+--
+--
+-- NVIM LSP CONFIGURATION
+
+-- vim.lsp.config('ruff', {
+--   init_options = {
+--     settings = {
+--       -- Ruff language server settings go here
+--     },
+--   },
+-- })
+--
+-- vim.lsp.enable 'ruff'
