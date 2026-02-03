@@ -1,3 +1,5 @@
+-- ABOUTME: Telescope fuzzy finder for files, LSP symbols, grep, and more.
+-- ABOUTME: Includes file browser extension and UI-select integration.
 -- NOTE: Plugins can specify dependencies.
 --
 -- The dependencies are proper plugin specifications as well - anything

@@ -1,3 +1,5 @@
+-- ABOUTME: Which-key plugin to display pending keybind hints.
+-- ABOUTME: Shows a popup of available key sequences after pressing a leader key.
 -- NOTE: Plugins can also be configured to run Lua code when they are loaded.
 --
 -- This is often very useful to both group configuration, as well as handle

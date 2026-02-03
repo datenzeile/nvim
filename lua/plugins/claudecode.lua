@@ -1,3 +1,5 @@
+-- ABOUTME: Official claudecode.nvim plugin for Claude Code integration.
+-- ABOUTME: Provides keymaps for toggling Claude, sending selections, and managing diffs.
 return {
   {
     'coder/claudecode.nvim',
@@ -16,7 +18,7 @@ return {
         '<leader>as',
         '<cmd>ClaudeCodeTreeAdd<cr>',
         desc = 'Add file',
-        ft = { 'NvimTree', 'neo-tree', 'oil', 'minifiles', 'netrw' },
+        ft = { 'snacks_explorer', 'neo-tree', 'oil', 'minifiles', 'netrw' },
       },
       -- Diff management
       { '<leader>aa', '<cmd>ClaudeCodeDiffAccept<cr>', desc = 'Accept diff' },

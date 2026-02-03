@@ -1,4 +1,5 @@
--- Highlight todo, notes, etc in comments
+-- ABOUTME: Highlights TODO, FIXME, NOTE, and similar keywords in comments.
+-- ABOUTME: Integrates with Telescope for searching todo comments across the project.
 return {
   { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
 }

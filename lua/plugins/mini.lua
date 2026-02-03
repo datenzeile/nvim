@@ -1,3 +1,5 @@
+-- ABOUTME: Mini.nvim collection providing textobjects, surround, and statusline.
+-- ABOUTME: Configures mini.ai, mini.surround, and mini.statusline modules.
 return {
   { -- Collection of various small independent plugins/modules
     'echasnovski/mini.nvim',

@@ -1,3 +1,5 @@
+-- ABOUTME: Bootstrap script that clones lazy.nvim plugin manager if not installed.
+-- ABOUTME: Adds lazy.nvim to the runtime path after cloning from GitHub.
 -- [[ Install `lazy.nvim` plugin manager ]]
 --    See `:help lazy.nvim.txt` or https://github.com/folke/lazy.nvim for more info
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'

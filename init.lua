@@ -1,3 +1,5 @@
+-- ABOUTME: Main Neovim entry point that sets leader key and loads configuration modules.
+-- ABOUTME: Requires options, keymaps, lazy-bootstrap, and lazy-plugins in sequence.
 --[[
 
 =====================================================================

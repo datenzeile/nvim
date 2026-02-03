@@ -1,3 +1,5 @@
+-- ABOUTME: Tokyo Night colorscheme with italic comments disabled.
+-- ABOUTME: Loaded at high priority to ensure consistent theme application.
 return {
   { -- You can easily change to a different colorscheme.
     -- Change the name of the colorscheme plugin below, and then

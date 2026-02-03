@@ -1,7 +1,10 @@
+-- ABOUTME: Nvim-lint plugin for asynchronous linting (disabled).
+-- ABOUTME: Configured for markdown linting, available for re-enabling.
 return {
 
   { -- Linting
     'mfussenegger/nvim-lint',
+    enabled = false,
     event = { 'BufReadPre', 'BufNewFile' },
     config = function()
       local lint = require 'lint'

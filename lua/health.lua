@@ -1,3 +1,5 @@
+-- ABOUTME: Health check module for verifying Neovim version and external dependencies.
+-- ABOUTME: Run with :checkhealth to validate git, make, unzip, and ripgrep are available.
 --[[
 --
 -- This file is not required for your own configuration,

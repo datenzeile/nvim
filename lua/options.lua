@@ -1,3 +1,5 @@
+-- ABOUTME: Core Neovim editor options for display, search, splits, and behavior.
+-- ABOUTME: Sets line numbers, clipboard, undo, whitespace display, and confirm-on-quit.
 -- [[ Setting options ]]
 -- See `:help vim.opt`
 -- NOTE: You can change these options as you wish!
@@ -67,16 +69,3 @@ vim.opt.scrolloff = 10
 vim.opt.confirm = true
 
 -- vim: ts=2 sts=2 sw=2 et
---
---
--- NVIM LSP CONFIGURATION
-
--- vim.lsp.config('ruff', {
---   init_options = {
---     settings = {
---       -- Ruff language server settings go here
---     },
---   },
--- })
---
--- vim.lsp.enable 'ruff'

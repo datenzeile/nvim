@@ -1,3 +1,5 @@
+-- ABOUTME: Core keymaps for navigation, diagnostics, terminal, and window management.
+-- ABOUTME: Includes arrow key training wheels and yank highlighting autocommand.
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 

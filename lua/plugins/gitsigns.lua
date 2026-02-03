@@ -1,3 +1,5 @@
+-- ABOUTME: Gitsigns plugin for git integration signs in the gutter.
+-- ABOUTME: Provides hunk navigation, staging, and blame line features.
 -- Alternatively, use `config = function() ... end` for full control over the configuration.
 -- If you prefer to call `setup` explicitly, use:
 --    {
